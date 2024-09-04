@@ -1,0 +1,25 @@
+.footer {
+    background-color: rgb(82, 113, 255, 1);
+    width: 100%;
+    margin-top: 30px;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+.downTown {
+    color: white;
+    font-size: 15px;
+}
+
+.last {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    background-color: black;
+}
