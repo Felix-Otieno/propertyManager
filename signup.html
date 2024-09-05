@@ -8,6 +8,7 @@
     <title>Home Sweet Home Finder Property List Manager</title>
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="signup.css">
+    <script type="module" src="./auth.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,28 @@
             <p class="wewe"><a href="./index.html">Home</a>>signup</p>
         </section>
 
-        <section class="today">
+        <div class="login-container">
+            <div id="main">
+                <h1>Sign In</h1>
+                <input id="email" type="text" placeholder="Email" />
+                <input id="password" type="password" placeholder="Password" />
+                <button id="submit">Login</button>
+                <p class="p"><span>or</span></p>
+                <button id="sign-up">Sign Up</button>
+            </div>
+
+            <div id="create-acct">
+                <h1 style="color: red; font-size: 35px; font-weight: 200;">Create an Account</h1>
+                <input id="email-signup" type="text" placeholder="Email *" />
+                <input id="confirm-email-signup" type="email" placeholder="Confirm Email *" />
+                <input id="password-signup" type="password" placeholder="Password *" />
+                <input id="confirm-password-signup" type="password" placeholder="Confirm Password *" />
+                <button id="create-acct-btn">Create Account</button>
+                <button id="return-btn">Return to Login</button>
+            </div>
+        </div>
+
+        <!-- <section class="today">
             <div class="tommorrow">
                 <h1>Sign Up</h1>
                 <input type="text" id="firstName" placeholder="First Name">
@@ -48,7 +70,7 @@
                 <input type="text" id="password" placeholder="Enter Email password">
                 <button>Sign In</button>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer class="footer">
