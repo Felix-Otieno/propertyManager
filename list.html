@@ -22,6 +22,324 @@
             <button onclick="location.href='index.html'" class="btn">Sign Out</button>
         </nav>
     </header>
+    <main>
+        <h1
+            style="color: red; font-size: 35px; font-weight: 300; text-align: center; border: 2px solid white; background-color: rgb(82, 113, 255, 1); border-radius: 50px;">
+            Management Hub</h1>
+        <section class="yotte">
+            <section id="forSale">
+                <h2>For Sale Form</h2>
+                <section class="formContainer">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="formGroup">
+                            <label for="propertyForSale">For Sale:</label>
+                            <select name="propertyForSale" id="propertyForSale">
+                                <option value="house">Houses for Sale</option>
+                                <option value="apartment">Apartments for Sale</option>
+                                <option value="land">Land for Sale</option>
+                                <option value="commercial">Commercial Property for Sale</option>
+                                <option value="residential">Residentials for Sale</option>
+                            </select>
+                        </div>
+                        <div class="formGroup">
+                            <label for="ownerName">Owner Name:</label>
+                            <input type="text" id="ownerName" name="ownerName" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="contactNumber">Contact Number:</label>
+                            <input type="text" id="contactNumber" name="contactNumber"
+                                placeholder="Enter Your Contact Number" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="location">The Location:</label>
+                            <input type="text" id="location" name="location" placeholder="Enter The Location" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="priceProperty">Price of the property(in USD):</label>
+                            <input type="text" id="priceProperty" name="priceProperty"
+                                placeholder="Enter The Price of Your Property" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyName">Property Name:</label>
+                            <input type="text" id="propertyName" name="propertyName"
+                                placeholder="Enter The Name of Your Property" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyAddress">Property Address:</label>
+                            <input type="text" id="propertyAddress" name="propertyAddress"
+                                placeholder="Enter Your Property Address" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyAddress">Property Address:</label>
+                            <input type="text" id="propertyAddress" name="propertyAddress"
+                                placeholder="Enter Your Property Address" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyDescription">Property Description:</label>
+                            <textarea type="text" id="propertyDescription" name="propertyDescription" rows="5"
+                                placeholder="Enter Details About Your Property" required></textarea>
+                        </div>
+                        <div class="formGroup">
+                            <label for="photos">Upload Property Photos:</label>
+                            <input type="file" id="photos" name="photos[]" accept="image/*" multiple>
+                            <p>Upload multiple images by holding down the "Ctrl" or "Command" key.</p>
+                        </div>
+
+                        <div class="formAction">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+
+            <section id="forRent">
+                <h2>For Rent Form</h2>
+                <section class="formContainer">
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="formGroup">
+                            <label for="propertyForRent">For Rent:</label>
+                            <select name="propertyForRent" id="propertyForRent">
+                                <option value="house">Houses for Rent</option>
+                                <option value="apartment">Apartments for Rent</option>
+                                <option value="land">Leasing Land</option>
+                                <option value="commercial">Commercial Property for Rent</option>
+                                <option value="residential">Residentials for Rent</option>
+                                <option value="bedSitters">Bedsitters for Rent</option>
+                            </select>
+                        </div>
+                        <div class="formGroup">
+                            <label for="ownerName">Owner Name:</label>
+                            <input type="text" id="ownerName" name="ownerName" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="contactNumber">Contact Number:</label>
+                            <input type="text" id="contactNumber" name="contactNumber"
+                                placeholder="Enter Your Contact Number" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="location">The Location:</label>
+                            <input type="text" id="location" name="location" placeholder="Enter The Location" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="rentPrice">Rent Price(in USD):</label>
+                            <input type="text" id="priceProperty" name="priceProperty"
+                                placeholder="Enter The Price of Your Property" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyName">Property Name:</label>
+                            <input type="text" id="propertyName" name="propertyName"
+                                placeholder="Enter The Name of Your Property" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyAddress">Property Address:</label>
+                            <input type="text" id="propertyAddress" name="propertyAddress"
+                                placeholder="Enter Your Property Address" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="propertyAddress">Property Address:</label>
+                            <input type="text" id="propertyAddress" name="propertyAddress"
+                                placeholder="Enter Your Property Address" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="rentDescription">Rent Description:</label>
+                            <textarea type="text" id="propertyDescription" name="propertyDescription" rows="5"
+                                placeholder="Enter Details About Your Property" required></textarea>
+                        </div>
+                        <div class="formGroup">
+                            <label for="photos">Upload Property for Rent Photos:</label>
+                            <input type="file" id="photos" name="photos[]" accept="image/*" multiple>
+                            <p>Upload multiple images by holding down the "Ctrl" or "Command" key.</p>
+                        </div>
+                        <div class="formAction">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </section>
+        </section>
+
+        <section id="agriculturalProperties">
+            <h2>Agricultural Properties</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="./management/semiarid.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Kitengela</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 1 million to Ksh 3 million
+                                per acre.</span> <br>
+                            Kajiado County, south of Nairobi.
+                            Kitengela is a semi-arid area but has fertile soil suitable for livestock farming (cattle,
+                            goats, sheep), and horticulture in irrigated areas. It's also close to Nairobi, making it
+                            popular for peri-urban farming.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/Nyandarua.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Nyandarua</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 800,000 and Ksh 2 million
+                                per acre.</span> <br>
+                            Nyandarua County, in central Kenya near the Aberdare Ranges. <br>
+                            This region has fertile soils and a cool climate ideal for dairy farming, potato farming,
+                            and horticulture. It's known for large-scale vegetable production such as carrots, cabbages,
+                            and peas.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/timau.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Timau</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 1.5 million to Ksh 5
+                                million per acre.</span> <br>
+                            Meru County, on the slopes of Mount Kenya. <br>
+                            Timau has fertile volcanic soil and is well-known for large-scale farming, especially wheat,
+                            barley, and floriculture. The high altitude provides a favorable climate for horticulture
+                            and dairy farming.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/nakuru.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Nakuru</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 1 million to Ksh 3.5
+                                million per acre.</span> <br>
+                            Nakuru County, part of the Rift Valley region. <br>
+                            Nakuru has fertile soils and is well-suited for dairy farming, maize, wheat, and flower
+                            farming. The area also benefits from proximity to local markets and infrastructure.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/mwea.webp" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Mwea</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 1.2 million to Ksh 4
+                                million per acre.</span> <br>
+                            Kirinyaga County, along the Nairobi-Embu highway. <br>
+                            Mwea is known for rice farming, and irrigation schemes from the Mwea irrigation project make
+                            it highly productive for other crops such as vegetables and horticulture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coastalProperties">
+            <h2>Coastal Properties</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="./management/Vipingo Ridge.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Vipingo Ridge</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 20 million to Ksh 80
+                                million</span> <br>
+                            Kilifi, near Mombasa <br>
+                            Vipingo Ridge is a premier gated community located in Kilifi, near Mombasa, known for its
+                            luxury villas and townhouses. The development features an 18-hole championship golf course
+                            and offers stunning views of the Indian Ocean, along with exclusive access to private
+                            beaches. It combines high-end living with serene surroundings, and is conveniently close to
+                            the Vipingo Airstrip for easy travel.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/Nyali Beachfront Villas.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Nyali Beachfront Villas</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 45 million to Ksh 150
+                                million</span> <br>
+                            Nyali, Mombasa <br>
+                            Nyali Beachfront Villas are upscale residences situated along the beautiful Nyali Beach in
+                            Mombasa. These villas offer direct beach access, stunning ocean views, and high-end
+                            amenities, making them ideal for luxury living or vacationing. The area is well-connected to
+                            shopping malls, international schools, and entertainment options, providing both comfort and
+                            convenience in a prime coastal location.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/Diani Beach Apartments.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Diani Beach Apartments</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 15 million to Ksh 60
+                                million</span> <br>
+                            Diani Beach, Kwale County <br>
+                            Diani Beach Apartments are located along the stunning Diani Beach, known for its white sandy
+                            shores and clear blue waters. These modern apartments offer direct access to the beach and
+                            are close to luxury resorts, golf courses, and dining options. They are popular for both
+                            vacation rentals and private residences, providing a perfect blend of comfort and
+                            convenience in a vibrant holiday destination.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/Kilifi Creek Residences.jpg" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Kilifi Creek Residences</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 25 million to Ksh 90
+                                million</span> <br>
+                            Kilifi Creek, Kilifi County <br>
+                            Kilifi Creek Residences are situated along the picturesque Kilifi Creek, offering a serene
+                            and tranquil environment. The properties feature a blend of contemporary and Swahili
+                            architectural styles, providing private homes with boat access to the creek. The area is
+                            close to Kilifi Town, offering convenient access to local amenities and medical facilities,
+                            making it ideal for those seeking a peaceful yet connected lifestyle.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./management/Lamu.webp" width="530px" height="264px" alt="">
+                    <div class="cardContent">
+                        <h3>Lamu Island Heritage Homes</h3>
+                        <p><span style="color: red; margin: 10px; display: inline-block;">Ksh 10 million to Ksh 50
+                                million</span> <br>
+                            Lamu Island, Lamu County <br>
+                            Lamu Island Heritage Homes are traditional Swahili-style residences located in the UNESCO
+                            World Heritage Site of Lamu Old Town. These homes feature a blend of Arabic and African
+                            architectural influences, offering a unique cultural experience in a peaceful, car-free
+                            environment. They are ideal for those seeking historical charm and tranquility, with easy
+                            access to cultural landmarks and pristine beaches.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="property">
+            <h2>Property Advice</h2>
+            <div class="advice">
+                <article class="adviceContent">
+                    <h3>Accurate Property Descriptions</h3>
+                    <p>Provide detailed and honest descriptions of properties, highlighting unique features. Accurate
+                        information builds trust with potential buyers and helps set realistic expectations.</p>
+                </article>
+                <article class="adviceContent">
+                    <h3>Clear Pricing Information</h3>
+                    <p>List clear and competitive pricing, including all costs such as taxes, maintenance fees, or
+                        utilities. Transparent pricing helps avoid confusion and makes your listings more appealing.</p>
+                </article>
+                <article class="adviceContent">
+                    <h3>Update Listings Regularly</h3>
+                    <p>Keep listings up-to-date with current availability, price changes, and new information. Regular
+                        updates show that your property management is active and attentive, increasing credibility.</p>
+                </article>
+                <article class="adviceContent">
+                    <h3>Include Floor Plans</h3>
+                    <p>Sharing floor plans gives prospective buyers a clearer understanding of the property layout,
+                        helping them visualize how they would utilize the space. This can lead to more serious
+                        inquiries.</p>
+                </article>
+                <article class="adviceContent">
+                    <h3>Offer Detailed Neighborhood Insights</h3>
+                    <p>Provide an overview of the neighborhood's vibe, safety, and growth potential. Buyers want to know
+                        if the area aligns with their lifestyle and long-term plans, so showcasing this adds value to
+                        your listing.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="icon">
+            <a href="./list.html"><img src="./management/back.jpg" width="32px" height="32px"
+                    alt="icon indicating go up to this page"></a>
+            <a href="./index.html"><img src="./management/172-1727038_back-home-back-icon-vector.png" width="32px"
+                    height="32px" alt="icon indicating to go back home"></a>
+        </section>
+
+
+    </main>
 
     <footer class="footer">
         <section class="down">

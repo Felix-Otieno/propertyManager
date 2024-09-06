@@ -1,5 +1,5 @@
 body {
-    background-color: #b4c8d7;
+    background-color: #ffffff;
     font-family: san serif;
 }
 
@@ -49,4 +49,215 @@ body {
 
 .btn:hover {
     color: red;
+}
+
+#property > h2 {
+color: red;
+font-size: 35px;
+font-weight: 300;
+
+}
+
+.advice {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.adviceContent > h3 {
+       color: red;
+       text-align: center;
+       font-size: 20px;
+       font-weight: 300;
+}
+
+.adviceContent > p {
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 2px;
+}
+
+.adviceContent {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 300px;
+    margin: 15px;
+}
+
+.adviceContent:hover {
+    transform: translateY(-10px);
+}
+
+#agriculturalProperties  > h2 {
+    color: red;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#coastalProperties > h2 {
+    color: red;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(7, 3, 3);
+}
+
+.card > img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardContent > h3 {
+    color: red;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+.cardContent {
+    padding: 10px;
+}
+
+.cardContent > p {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+
+#forRent > h2 {
+    color: red;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#forSale > h2 {
+    color: red;
+    font-size: 35px;
+    font-weight: 300;
+    text-align: center; 
+}
+
+.icon {
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 30%;
+    margin-left: 45rem;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.formContainer {
+    max-width: 600px;
+    margin: 30px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+.formGroup {
+    margin-bottom: 15px;
+    padding: 20px;
+    
+}
+
+.formGroup label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.formGroup input[type="text"],
+.formGroup textarea,
+.formGroup select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.formGroup input[type="text"]:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.formGroup textarea {
+    resize: none;
+}
+
+.formGroup p {
+    font-size: 12px;
+    color: #666;
+}
+
+.formGroup input[type="file"] {
+    margin-top: 10px;
+}
+
+.formAction {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formAction button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formAction button:hover {
+    background-color: #0056b3;
+}
+
+.yotte {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
 }

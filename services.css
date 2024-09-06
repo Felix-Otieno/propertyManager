@@ -1,5 +1,5 @@
 body {
-    background-color: #b4c8d7;
+    background-color: #ffffff;
     font-family: san serif;
 }
 
@@ -180,7 +180,7 @@ body {
 .mother > h3 {
     padding: 20px;
     margin-top: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: 15px;
     font-weight: 300;
